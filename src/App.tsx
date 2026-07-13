@@ -94,7 +94,7 @@ function Shell() {
   };
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-midnight-950 font-sans text-slate-100">
       <Header onNavigate={navigate} onAuthOpen={openAuth} />
       <main className="flex-1">{renderRoute()}</main>
       <Footer />
