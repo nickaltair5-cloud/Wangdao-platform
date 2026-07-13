@@ -56,23 +56,22 @@ export function Home({ onOpenStory }: HomeProps) {
   const showingBrowse = browseMode || query || activeTag;
 
   return (
-    <div className="animate-fade-in">
+    <div className="animate-fade-in bg-midnight-950 font-sans text-slate-100">
       {/* HERO */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-midnight-radial opacity-90" />
+      <section className="relative overflow-hidden bg-midnight-950">
+        <div className="absolute inset-0 bg-midnight-radial opacity-100" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-midnight-950" />
         <div className="absolute -left-40 top-20 h-80 w-80 rounded-full bg-cyan/10 blur-3xl" />
         <div className="absolute -right-40 bottom-0 h-80 w-80 rounded-full bg-gold/10 blur-3xl" />
         <div className="relative mx-auto max-w-7xl px-4 pb-16 pt-12 text-center sm:px-6 lg:px-8 lg:pt-20">
           <div className="flex flex-col items-center">
-            <div className="rounded-2xl p-2 bg-midnight-950/80 shadow-[0_8px_60px_rgba(0,0,0,0.6)] ring-1 ring-white/5">
-              <img
-                src="/photo_2026-07-12_21-44-56 copy.jpg"
-                alt="Wangdao"
-                className="w-56 sm:w-72 lg:w-80 rounded-xl object-contain"
-              />
-            </div>
+            <img
+              src="https://i.gyazo.com/b1cd2e06b3f7cb460107822b0a2c76f7.png"
+              alt="Wangdao"
+              className="w-64 object-contain drop-shadow-[0_0_50px_rgba(0,0,0,0.75)] sm:w-80 lg:w-96"
+            />
           </div>
-          <p className="mx-auto mt-4 max-w-2xl text-balance font-serif text-lg text-slate-300 sm:text-xl">
+          <p className="mx-auto mt-4 max-w-2xl text-balance font-sans text-lg leading-relaxed text-slate-300 sm:text-xl">
             A literary universe where stories breathe. Read immersive chapters, explore character designs,
             and join a community of dreamers and storytellers.
           </p>
